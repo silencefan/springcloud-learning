@@ -20,6 +20,8 @@
         <module>springcloud-learning-eureka-server</module>
         <module>springcloud-learning-eureka-client</module>
         <module>springcloud-learning-ribbon</module>
+        <module>springcloud-learning-feign</module>
+        <module>springcloud-learning-hystrix</module>
     </modules>
 
     <properties>
