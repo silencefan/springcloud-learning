@@ -19,6 +19,7 @@
     <modules>
         <module>springcloud-learning-eureka-server</module>
         <module>springcloud-learning-eureka-client</module>
+        <module>springcloud-learning-ribbon</module>
     </modules>
 
     <properties>
