@@ -17,7 +17,7 @@ public class HelloService {
 
     @HystrixCommand(fallbackMethod = "processError")
     public String helloService(String name) {
-        return restTemplate.getForObject("http://EUREKA-CLIENT/hi?name="+name,String.class);
+        return restTemplate.getForObject("http://eureka-client/hi?name="+name,String.class);
     }
 
     public String processError(String name) {

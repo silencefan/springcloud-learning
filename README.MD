@@ -18,3 +18,7 @@ Feign默认集成了Ribbon，并和Eureka结合，默认实现了负载均衡的
 #### Hystrix
 当对特定的服务的调用的不可用达到一个阀值（Hystric 是5秒20次） 断路器将会被打开。<br/>
 断路打开后，可用避免连锁故障，fallback方法可以直接返回一个固定值。
+
+#### Zuul
+Zuul的主要功能是路由转发和过滤器。路由功能是微服务的一部分，<br/>
+比如／api/user转发到到user服务，/api/shop转发到到shop服务。zuul默认和Ribbon结合实现了负载均衡的功能。

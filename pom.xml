@@ -22,6 +22,7 @@
         <module>springcloud-learning-ribbon</module>
         <module>springcloud-learning-feign</module>
         <module>springcloud-learning-hystrix</module>
+        <module>springcloud-learning-zuul</module>
     </modules>
 
     <properties>
@@ -31,6 +32,11 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
