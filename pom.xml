@@ -23,6 +23,8 @@
         <module>springcloud-learning-feign</module>
         <module>springcloud-learning-hystrix</module>
         <module>springcloud-learning-zuul</module>
+        <module>springcloud-learning-config-server</module>
+        <module>springcloud-learning-config-client</module>
     </modules>
 
     <properties>
