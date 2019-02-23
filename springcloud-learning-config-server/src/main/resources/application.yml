@@ -1,3 +1,6 @@
+server:
+  port: 8888
+
 spring:
   application:
     name: config-server
@@ -5,9 +8,11 @@ spring:
     config:
       server:
         git:
-          uri: https://gitee.com/vanderfan/springcloud-learning/
+          uri: https://gitee.com/vanderfan/springcloud-learning
           searchPaths: config
-          username:
-          password:
-server:
-  port: 8888
+      label: master
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
