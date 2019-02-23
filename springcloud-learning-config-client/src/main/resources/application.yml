@@ -5,11 +5,11 @@ spring:
   application:
     name: config-client
 
-# 初步断定是继承父pom导致引入eureka server 暂时先屏蔽
+# 初步断定是继承父pom导致引入eureka server 可以考虑暂时先屏蔽
 eureka:
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
 
 # Spring Boot 1.5.X 以上默认开通了安全认证，
 # 所以要在配置文件 application.yml 中添加以下配置以将/actuator/refresh这个 Endpoint 暴露出来
